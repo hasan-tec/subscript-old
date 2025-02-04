@@ -1,0 +1,143 @@
+/* Globale stijlen */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Zachte achtergrondkleur voor een prettige leeservaring */
+  color: #333;
+}
+
+/* Container voor de hele pagina */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Koppen */
+h1, h2, h3 {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Notitiessectie */
+.notes-section {
+  margin-bottom: 2rem;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notes-section h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.note {
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  margin-bottom: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Formuliersectie */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .notes-section h2 {
+    font-size: 20px;
+  }
+
+  .note {
+    padding: 10px;
+  }
+}
+
+/* Overige details */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
